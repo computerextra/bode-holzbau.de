@@ -20,13 +20,20 @@ const Home = () => {
               <p className="mx-auto max-w-screen-md text-muted-foreground lg:text-xl">
                 Über 100 Jahre Handwerkskompetenz
               </p>
+              <p className="mx-auto max-w-screen-md text-muted-foreground lg:text-xl">
+                Ihr Spezialist für alle Facetten des Trocken- und Innenausbaus,
+                Trennwände und komplexe Deckensysteme - und das seit 1910. In
+                der Baubranche im Großraum Kassel steht unser Name für
+                hochwertige Qualität, besten Service und professionelles
+                Know-how.
+              </p>
               <div className="mt-12 flex w-full flex-col justify-center gap-2 sm:flex-row">
                 <Button>
-                  Get started now
+                  Kontakt aufnehmens
                   <ChevronRight className="ml-2 h-4" />
                 </Button>
                 <Button variant="ghost">
-                  Learn more
+                  Unsere Leistungen
                   <ChevronRight className="ml-2 h-4" />
                 </Button>
               </div>

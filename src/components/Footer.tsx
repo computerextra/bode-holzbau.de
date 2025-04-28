@@ -51,9 +51,6 @@ const Footer = ({
       ],
     },
   ],
-  copyright = `©2025 ${
-    new Date().getFullYear() > 2025 ? "- " + new Date().getFullYear() : ""
-  } Bode Holzbau | Design by Johannes Kirchner (Computer Extra GmbH)`,
   bottomLinks = [
     { text: "Presse", url: "#" },
     { text: "Partner", url: "#" },
@@ -97,7 +94,20 @@ const Footer = ({
             ))}
           </div>
           <div className="mt-24 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium text-muted-foreground md:flex-row md:items-center">
-            <p>{copyright}</p>
+            <p>
+              &copy; 2025{" "}
+              {new Date().getFullYear() > 2025
+                ? "- " + new Date().getFullYear()
+                : ""}
+              Stephan Bode Holzbau GmbH | Design by{" "}
+              <a
+                href="https://computer-extra.de"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Johannes Kirchner (Computer Extra GmbH)
+              </a>
+            </p>
             <ul className="flex gap-4">
               {bottomLinks.map((link, linkIdx) => (
                 <li key={linkIdx} className="underline hover:text-primary">
