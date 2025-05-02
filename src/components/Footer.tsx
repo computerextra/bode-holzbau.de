@@ -54,8 +54,11 @@ const Footer = ({
   bottomLinks = [
     { text: "Presse", url: "#" },
     { text: "Partner", url: "#" },
-    { text: "Impressum", url: "#" },
-    { text: "Datenschutz", url: "#" },
+    { text: "Impressum", url: "https://www.bode-holzbau.de/impressum.html" },
+    {
+      text: "Datenschutz",
+      url: "https://www.bode-holzbau.de/datenschutz.html",
+    },
   ],
 }: Footer2Props) => {
   return (
