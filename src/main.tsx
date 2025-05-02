@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
 import Layout from "./Layout";
-import { Home } from "./Pages/Home";
+import Home from "./Pages/Home";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -14,5 +14,5 @@ createRoot(document.getElementById("root")!).render(
         </Route>
       </Routes>
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );

@@ -1,14 +1,12 @@
 import { Outlet } from "react-router";
-import { Footer } from "./components/Footer";
-import { NavMenu } from "./components/NavMenu";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Layout() {
   return (
-    <div className="container flex flex-col mx-auto w-full h-full min-h-[100vh]">
-      <NavMenu />
-      <div className="grow">
-        <Outlet />
-      </div>
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <Outlet />
       <Footer />
     </div>
   );

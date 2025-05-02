@@ -1,48 +1,52 @@
-import { ChevronRight } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
+import { NavLink } from "react-router";
 
-const Home = () => {
+export default function Home() {
   return (
-    <section className="pb-8">
-      <div className="overflow-hidden">
-        <div className="container">
-          <img
-            src="/header-home.jpg"
-            alt="Hero"
-            className="mx-auto mt-24 max-h-[700px] w-full max-w-7xl rounded-t-lg object-cover shadow-lg"
-          />
-          <div className="mx-auto flex max-w-5xl flex-col items-center">
-            <div className="z-10 items-center text-center">
-              <h1 className="mb-8 text-4xl font-semibold text-pretty lg:text-7xl">
-                Stephan Bode Holzbau GmbH
+    <main className="flex-1">
+      {/* Hero Section */}
+      <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <div className="relative h-full w-full">
+            <img
+              src="/placeholder.svg?height=1080&width=1920"
+              alt="Hero background"
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-black/50" />
+          </div>
+        </div>
+
+        <div className="container relative z-10 px-4 md:px-6">
+          <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
+                Welcome to Our Platform
               </h1>
-              <p className="mx-auto max-w-screen-md text-muted-foreground lg:text-xl">
-                Über 100 Jahre Handwerkskompetenz
+              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
+                Discover amazing features and services that will transform your
+                experience. Start your journey with us today.
               </p>
-              <p className="mx-auto max-w-screen-md text-muted-foreground lg:text-xl">
-                Ihr Spezialist für alle Facetten des Trocken- und Innenausbaus,
-                Trennwände und komplexe Deckensysteme - und das seit 1910. In
-                der Baubranche im Großraum Kassel steht unser Name für
-                hochwertige Qualität, besten Service und professionelles
-                Know-how.
-              </p>
-              <div className="mt-12 flex w-full flex-col justify-center gap-2 sm:flex-row">
-                <Button>
-                  Kontakt aufnehmens
-                  <ChevronRight className="ml-2 h-4" />
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <NavLink to="/">
+                <Button size="lg">Ihre direkter Kontakt</Button>
+              </NavLink>
+              <NavLink to="/">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="bg-background/20 text-white hover:bg-background/30 hover:text-white"
+                >
+                  Mehr Infos
                 </Button>
-                <Button variant="ghost">
-                  Unsere Leistungen
-                  <ChevronRight className="ml-2 h-4" />
-                </Button>
-              </div>
+              </NavLink>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
-};
-
-export { Home };
+}
