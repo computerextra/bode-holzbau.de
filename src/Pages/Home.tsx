@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 export default function Home() {
   return (
-    <section className="dark relative flex h-svh max-h-[1400px] w-svw overflow-hidden bg-[url(/pawel-czerwinski-IbHFznCKnqA-unsplash.jpg)] bg-cover bg-center bg-no-repeat font-sans after:absolute after:top-0 after:left-0 after:z-10 after:h-full after:w-full after:bg-black/20 after:content-[''] md:h-svh">
+    <section className="dark relative flex h-svh max-h-[1400px] w-svw overflow-hidden bg-[url(/05-22-25-115532.png)] bg-cover bg-center bg-no-repeat font-sans after:absolute after:top-0 after:left-0 after:z-10 after:h-full after:w-full after:bg-black/50 after:content-[''] md:h-svh">
       <div className="relative z-30 m-auto flex max-w-[46.25rem] flex-col items-center justify-center gap-6 px-5">
         <h1 className="text-center font-serif text-4xl leading-tight text-foreground md:text-6xl xl:text-[4.4rem]">
           Stephan Bode Holzbau GmbH
