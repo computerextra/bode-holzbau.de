@@ -22,6 +22,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
 
 const Header = () => {
   const features = [
@@ -132,6 +133,7 @@ const Header = () => {
           </NavigationMenu>
           <div className="hidden items-center gap-4 lg:flex">
             <Button>Ihr Kontakt zu uns</Button>
+            <ModeToggle />
           </div>
           <Sheet>
             <SheetTrigger asChild className="lg:hidden">

@@ -1,14 +1,18 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { NavLink } from "react-router";
 
 export default function Home() {
   return (
-    <section className="dark relative flex h-svh max-h-[1400px] w-svw overflow-hidden bg-[url(/05-22-25-115532.png)] bg-cover bg-center bg-no-repeat font-sans after:absolute after:top-0 after:left-0 after:z-10 after:h-full after:w-full after:bg-black/50 after:content-[''] md:h-svh">
-      <div className="relative z-30 m-auto flex max-w-[46.25rem] flex-col items-center justify-center gap-6 px-5">
-        <h1 className="text-center font-serif text-4xl leading-tight text-foreground md:text-6xl xl:text-[4.4rem]">
+    <section className="relative flex h-svh max-h-[1400px] w-svw overflow-hidden bg-[url(/05-22-25-115532.png)] bg-cover bg-center bg-no-repeat font-sans after:absolute after:top-0 after:left-0 after:z-10 after:h-full after:w-full after:bg-black/50 after:content-[''] md:h-svh">
+      <div className="absolute top-2 right-2 z-31">
+        <ModeToggle />
+      </div>
+      <div className="relative z-30 m-auto flex max-w-[46.25rem] flex-col items-center justify-center gap-6 px-5 bg-black/40 dark:bg-white/20 p-4 rounded-2xl backdrop-blur-xl">
+        <h1 className="text-center font-serif text-4xl leading-tight md:text-6xl xl:text-[4.4rem] text-background dark:text-foreground">
           Stephan Bode Holzbau GmbH
         </h1>
-        <p className="text-center text-base text-foreground">
+        <p className="text-center text-base text-background dark:text-foreground">
           Ihr Spezialist für alle Facetten des Trocken- und Innenausbaus,
           Trennwände und komplexe Deckensysteme - und das seit 1910.
         </p>
